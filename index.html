@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+
+  <style>
+
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+  }
+
+    #container {
+  width: 400px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the form */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+  margin-bottom: 5px; 
+}
+
+  </style>
+  <body>
+    <div id="container" >
+      <form action="filled.html" onsubmit="return data()">
+
+        <label for="name"></label>
+        Username: <input type="text" name="name" id="name" />
+
+        
+        <label for="email"></label>
+        Email: <input type="email" name="email" id="email" />
+
+        
+        <label for="number"></label>
+        Mobile Number : <input type="number" name="number" id="number"  />
+
+        <label for="password"></label>
+        Password : <input type="password" name="password" id="password"/>
+
+        <label for="confirmPassword"></label>
+       Confirm Password : <input type="password" name="password" id="confirmPassword"  />
+       <br>
+
+       <input style="border-radius: 5px; cursor: pointer; margin: 10px; height: 30px; background-color: rgb(208, 223, 220);" type="submit" value="Submit Your Data">
+
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
